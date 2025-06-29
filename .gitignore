@@ -1,0 +1,40 @@
+﻿# Keil μVision files
+*.uvguix*
+*.uvopt*
+*.uvoptx
+*.uvprojx
+*.map
+*.lst
+*.hex
+*.bin
+*.elf
+*.axf
+
+# Debug files
+*.scvd
+JLinkLog.txt
+JLinkSettings.ini
+Nu_Link_Driver.ini
+DebugConfig/
+
+# Backup files
+*.bak
+
+# Build directories
+Objects/
+Listings/
+Output/
+
+# IDE settings
+.vscode/
+.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*~
+*.tmp
+*.swp
+*.swo
