@@ -2,7 +2,11 @@
 #define __IO_HANDLER_H
 
 #include "main.h"
-#include "global_data.h"
+
+/* 错误代码定义 */
+#define ERROR1_YAKONG_PROTECT     1    /* 机械压力保护 */
+#define ERROR8_WATER_LOGIC        8    /* 水位逻辑错误 */
+#define ERROR15_REBAO_BAD        15    /* 燃烧器热保护 */
 
 /* IO引脚状态结构体 */
 typedef struct {
@@ -37,7 +41,7 @@ void ioSystemInit(void);
 void Get_IO_Inf(void);
 void getIoPerformanceMetrics(ioPerfT* perfData);
 
-/* 错误码定义 */
+/* 错误码枚举 */
 typedef enum {
     IO_OK = 0,
     IO_ERROR_TIMEOUT,
